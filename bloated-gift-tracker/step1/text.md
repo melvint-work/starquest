@@ -11,8 +11,7 @@ docker build -t gift-tracker:naive.
 docker images gift-tracker:naive
 ```
 
-### What did you notice?
-<details><summary>Hint</summary>
+<details><summary><b>What did you notice?</b></summary>
 
 ```plain
 1. Notice the size? 
@@ -37,7 +36,7 @@ You should see `resources/.env` listed. That file contains `DB_PASSWORD=supersec
 docker run --rm gift-tracker:naive whoami
 ```
 
-<details><summary>Solution</summary>
+<details><summary><b>Who & Why is the user?</b></summary>
 
 ```plain
 The answer will be `root`. 
