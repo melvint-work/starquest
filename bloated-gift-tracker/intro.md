@@ -1,14 +1,15 @@
 # The Bloated Gift Tracker
 
-**Points:** 200 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers
-
-**Learning Objectives:** Multi-stage builds · layer caching · non-root users · `.dockerignore` · `HEALTHCHECK` · image pinning · no hardcoded secrets
+> **Points:** 200 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers
+>
+> **Learning Objectives:** 
+> Demonstrate hands-on proficiency in creating production-ready Docker images by implementing optimization and security standards.
 
 ---
 
 ## The Situation
 
-The rogue elves have struck again. This time they've sabotaged the **Gift Tracking Service** container build pipeline — a Flask API that logs every present destined for North Pole delivery.
+The rogue elves have struck. They've sabotaged the **Gift Tracking Service** container build pipeline — a Flask API that logs every present destined for North Pole delivery.
 
 The image builds and runs. But it violates every container best practice:
 
@@ -45,4 +46,6 @@ gift-tracker/
     └── requirements.txt
 ```
 
-> The environment is setting up. Please wait for **"You can now begin!"** before starting.
+> The environment is setting up.
+> Please wait for **"START"** load before starting. <br>
+> Click on the **"Editor"** tab to access the files.
