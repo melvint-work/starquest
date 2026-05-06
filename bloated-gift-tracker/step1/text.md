@@ -3,7 +3,7 @@ First, navigate to the working directory, inspect the dockerfile and build the b
 
 ```
 cd /root/gift-tracker/01-naive-build
-docker build -t gift-tracker:naive.
+docker build -t gift-tracker:naive .
 ```
 
 ## Check the image size
