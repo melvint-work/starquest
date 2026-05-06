@@ -9,15 +9,19 @@ docker build -t gift-tracker:naive .
 ```
 
 ## Check the image size
-```
-docker images gift-tracker:naive
-```
 
-<details><summary><b>What did you notice?</b></summary>
+Run the command below to observer the size.
+
+```
+docker images gift-tracker:naive && echo "" && read -p "What is the size of the image? " q1_size && echo "$q1_size" > /tmp/q1-size && echo "Answer recorded!"
+```{{exec}}
+
+<details><summary><b>Why is it so large?</b></summary>
 
 ```plain
-1. Notice the size?
-2. What could be the reason that the file is of the size?
+python:latest pulls the full Debian-based Python image with compilers and
+build tools included — all of which are unnecessary at runtime.
+Without a multi-stage build, everything stays in the final image.
 ```
 </details>
 
