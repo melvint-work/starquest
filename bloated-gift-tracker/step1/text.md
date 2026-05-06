@@ -40,8 +40,8 @@ docker run --rm gift-tracker:naive whoami
 <details><summary><b>Who & Why is the user?</b></summary>
 
 ```plain
-The answer will be `root`. 
-That is the default when no `USER` instruction is present.
+The answer will be root. 
+That is the default when no USER instruction is present.
 ```
 </details>
 
