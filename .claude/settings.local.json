@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Remove-Item -Recurse -Force \"c:\\\\Users\\\\Melvin-Blacksmith\\\\Desktop\\\\starquest\\\\bloated-gift-tracker\" -Confirm:$false)"
+    ]
+  }
+}

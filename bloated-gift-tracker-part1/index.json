@@ -1,6 +1,6 @@
 {
-  "title": "🐳 Docker - The Bloated Gift Tracker",
-  "description": "The rogue elves have sabotaged the Gift Tracking Service container build pipeline. Build the broken image, find every problem, then fix it to meet the North Pole Container Standard.",
+  "title": "🐳 Docker - The Bloated Gift Tracker (Part 1: Diagnose)",
+  "description": "The rogue elves have sabotaged the Gift Tracking Service container build pipeline. Build the broken image and discover every violation of the North Pole Container Standard.",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -21,16 +21,6 @@
         "title": "Step 3 - Understand the broken layer cache",
         "text": "step3/text.md",
         "verify": "step3/verify.sh"
-      },
-      {
-        "title": "Step 4 - Fix the Dockerfile",
-        "text": "step4/text.md",
-        "verify": "step4/verify.sh"
-      },
-      {
-        "title": "Step 5 - Verify the optimized image",
-        "text": "step5/text.md",
-        "verify": "step5/verify.sh"
       }
     ],
     "finish": {

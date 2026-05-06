@@ -1,4 +1,4 @@
-# Step 5 — Verify the optimized image
+# Step 2 — Verify the optimized image
 
 Run through each check to confirm your image meets the North Pole Container Standard.
 

@@ -1,9 +1,9 @@
-# The Bloated Gift Tracker
+# The Bloated Gift Tracker — Part 1: Diagnose
 
-> **Points:** 200 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers. <br>
+> **Points:** 100 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers. <br>
 >
-> **Learning Objectives:** 
-> Demonstrate hands-on proficiency in creating production-ready Docker images by implementing optimization and security standards.
+> **Learning Objectives:**
+> Identify common Docker anti-patterns by hands-on inspection of a deliberately broken image.
 
 ---
 
@@ -22,9 +22,7 @@ The image builds and runs. But it violates every container best practice:
 
 ## Your Mission
 
-1. Build the naive image and discover each problem firsthand
-2. Fix the Dockerfile so it meets the **North Pole Container Standard**
-3. Verify your fix with the automated checks
+Build the naive image and discover each problem firsthand. In Part 2 you will fix everything.
 
 ## What Already Exists
 
@@ -35,17 +33,12 @@ gift-tracker/
 ├── resources/
 │   ├── .env                  ← Contains a fake secret (should NOT enter image)
 │   └── heavy-artifact.zip    ← Large file (should NOT enter image)
-├── 01-naive-build/
-│   ├── Dockerfile            ← The BAD Dockerfile — study it
-│   ├── app.py
-│   └── requirements.txt
-└── 02-optimized-build/
-    ├── Dockerfile            ← YOUR TASK: fix this
-    ├── .dockerignore         ← Already provided
+└── 01-naive-build/
+    ├── Dockerfile            ← The BAD Dockerfile — study it
     ├── app.py
     └── requirements.txt
 ```
 
 > The environment is setting up.
-> Please wait for **"START"** load before starting. <br>
+> Please wait for **"START"** to load before starting. <br>
 > Click on the **"Editor"** tab to access the files.

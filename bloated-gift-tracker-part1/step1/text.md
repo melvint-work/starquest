@@ -1,5 +1,6 @@
-## Inspect Dockerfile in for naive-build
-First, navigate to the working directory, inspect the dockerfile and build the bad image:
+## Inspect the Dockerfile for naive-build
+
+First, navigate to the working directory, inspect the Dockerfile and build the bad image:
 
 ```
 cd /root/gift-tracker/01-naive-build
@@ -15,7 +16,7 @@ docker images gift-tracker:naive
 <details><summary><b>What did you notice?</b></summary>
 
 ```plain
-1. Notice the size? 
+1. Notice the size?
 2. What could be the reason that the file is of the size?
 ```
 </details>
@@ -40,7 +41,7 @@ docker run --rm gift-tracker:naive whoami
 <details><summary><b>Who & Why is the user?</b></summary>
 
 ```plain
-The answer will be root. 
+The answer will be root.
 That is the default when no USER instruction is present.
 ```
 </details>

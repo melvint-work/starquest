@@ -5,10 +5,9 @@
 set -e
 
 mkdir -p /root/gift-tracker/01-naive-build
-mkdir -p /root/gift-tracker/02-optimized-build
 mkdir -p /root/gift-tracker/resources
 
-# ── app.py (shared across both labs) ──────────────────────────────────────────
+# ── app.py ────────────────────────────────────────────────────────────────────
 cat > /root/gift-tracker/app.py << 'APPEOF'
 import os
 import socket
@@ -46,11 +45,9 @@ if __name__ == "__main__":
 APPEOF
 
 cp /root/gift-tracker/app.py /root/gift-tracker/01-naive-build/app.py
-cp /root/gift-tracker/app.py /root/gift-tracker/02-optimized-build/app.py
 
 # ── requirements.txt ──────────────────────────────────────────────────────────
 echo "flask==3.0.3" > /root/gift-tracker/01-naive-build/requirements.txt
-echo "flask==3.0.3" > /root/gift-tracker/02-optimized-build/requirements.txt
 
 # ── Teaching resources (.env and heavy file) ──────────────────────────────────
 echo "DB_PASSWORD=supersecret123" > /root/gift-tracker/resources/.env
@@ -70,28 +67,6 @@ RUN pip install -r requirements.txt
 
 CMD ["python", "app.py"]
 NAIVEEOF
-
-# ── 02-optimized-build/Dockerfile (BLANK — learner fills this in) ─────────────
-cat > /root/gift-tracker/02-optimized-build/Dockerfile << 'BLANKEOF'
-# YOUR TASK: Write a production-ready Dockerfile here.
-# Requirements:
-#   1. Final image under 200MB
-#   2. App must NOT run as root
-#   3. Use a multi-stage build
-#   4. requirements.txt copied before app.py (layer caching)
-#   5. .dockerignore present
-#   6. HEALTHCHECK defined
-#   7. No secrets hardcoded
-BLANKEOF
-
-# ── .dockerignore for the optimized build ─────────────────────────────────────
-cat > /root/gift-tracker/02-optimized-build/.dockerignore << 'IGNEOF'
-.git
-resources/.env
-resources/heavy-artifact.zip
-**/__pycache__
-**/*.pyc
-IGNEOF
 
 # Signal that setup is complete
 touch /tmp/setup-finished

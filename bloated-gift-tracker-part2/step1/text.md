@@ -1,4 +1,4 @@
-# Step 4 — Fix the Dockerfile
+# Step 1 — Fix the Dockerfile
 
 Now write the production-ready Dockerfile. Navigate to the optimized build directory:
 
