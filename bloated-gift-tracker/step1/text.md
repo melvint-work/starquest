@@ -1,20 +1,25 @@
-# Step 1 — Build and inspect the naive image
- 
-## Inspect Dockerfile in 01-naive-build
-First, navigate to the working directory and build the bad image:
+## Inspect Dockerfile in for naive-build
+First, navigate to the working directory, inspect the dockerfile and build the bad image:
 
 ```
 cd /root/gift-tracker/01-naive-build
-docker build -t gift-tracker:naive .
+docker build -t gift-tracker:naive.
 ```
 
 ## Check the image size
-
 ```
 docker images gift-tracker:naive
 ```
 
-Note the size — it will be well over 1GB.
+### What did you notice?
+<details><summary>Hint</summary>
+
+```plain
+1. Notice the size? 
+2. What could be the reason that the file is of the size?
+```
+</details>
+
 
 ## Check what got copied into the image
 
@@ -32,7 +37,13 @@ You should see `resources/.env` listed. That file contains `DB_PASSWORD=supersec
 docker run --rm gift-tracker:naive whoami
 ```
 
-The answer will be `root`. That is the default when no `USER` instruction is present.
+<details><summary>Solution</summary>
+
+```plain
+The answer will be `root`. 
+That is the default when no `USER` instruction is present.
+```
+</details>
 
 You can also run the app and check the `user_id` field in the JSON response:
 
