@@ -1,5 +1,5 @@
 {
-  "title": "The Bloated Gift Tracker",
+  "title": "Docker - The Bloated Gift Tracker",
   "description": "The rogue elves have sabotaged the Gift Tracking Service container build pipeline. Build the broken image, find every problem, then fix it to meet the North Pole Container Standard.",
   "details": {
     "intro": {

@@ -6,4 +6,4 @@ STARQUEST is the official onboarding expedition designed to transform newcomers 
 
 These challenges are hosted on [Killercoda](https://killercoda.com/), providing an interactive, browser-based environment where you can deploy manifests, debug issues, and secure clusters in real-time.
 
-👉 **[Play the Scenarios on Killercoda Here](insert link)**
+👉 **[Play the Scenarios on Killercoda Here](https://killercoda.com/melvint-work)**
