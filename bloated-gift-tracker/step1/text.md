@@ -2,7 +2,7 @@
 First, navigate to the working directory, inspect the dockerfile and build the bad image:
 
 ```
-cd /root/gift-tracker/01-naive-build
+cd /root/gift-tracker/
 docker build -t gift-tracker:naive -f 01-naive-build/Dockerfile .
 ```
 
