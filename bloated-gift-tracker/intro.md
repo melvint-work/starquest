@@ -1,6 +1,6 @@
 # The Bloated Gift Tracker
 
-> **Points:** 200 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers
+> **Points:** 200 &nbsp;|&nbsp; **Prerequisites:** Basic Docker/Dockerfile knowledge, understanding of container image layers. <br>
 >
 > **Learning Objectives:** 
 > Demonstrate hands-on proficiency in creating production-ready Docker images by implementing optimization and security standards.
